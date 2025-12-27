@@ -1,0 +1,143 @@
+[
+  {
+    "title": "MongoDB Associate Developer",
+    "issuer": "MongoDB",
+    "date": "14-12-2025",
+    "image": "/certificates/mongodb.jpg",
+    "verifyLink": "",
+    "starred": true,
+    "tags": [
+      "MongoDB",
+      "CRUD",
+      "Indexes"
+    ]
+  },
+  {
+    "title": "Introduction to Operating Systems",
+    "issuer": "IIT Madras (NPTEL)",
+    "date": "Jul–Sep 2024",
+    "image": "/certificates/operating-systems-nptel.png",
+    "verifyLink": "",
+    "tags": [
+      "Operating Systems",
+      "Processes",
+      "Memory Management",
+      "Scheduling",
+      "OS Fundamentals"
+    ]
+  },
+  {
+    "title": "Data Science Foundations",
+    "issuer": "University of London & IBM (Coursera)",
+    "date": "Nov 2025",
+    "image": "/certificates/data-science-foundations.jpg",
+    "verifyLink": "https://coursera.org/verify/specialization/E1UZD5HBCJ3T",
+    "starred": true,
+    "tags": [
+      "Data Science",
+      "Python",
+      "Machine Learning",
+      "K-Means",
+      "Statistics",
+      "Jupyter",
+      "GitHub",
+      "IBM Watson"
+    ]
+  },
+  {
+    "title": "Computer Forensics",
+    "issuer": "Infosec (Coursera)",
+    "date": "Dec 2025",
+    "image": "/certificates/computer-forensics.jpg",
+    "verifyLink": "https://coursera.org/verify/specialization/WU1V56R6Q9II",
+    "tags": [
+      "Digital Forensics",
+      "Windows Forensics",
+      "Registry Analysis",
+      "Incident Investigation"
+    ]
+  },
+  {
+    "title": "GenAI Job Simulation",
+    "issuer": "BCGX (Forage)",
+    "date": "Sep 2024",
+    "image": "/certificates/bcg-genai-job-simulation.jpg",
+    "verifyLink": "",
+    "tags": [
+      "Generative AI",
+      "Data Analysis",
+      "AI Chatbots",
+      "Business Problem Solving"
+    ]
+  },
+  {
+    "title": "Introduction to Cyber Security",
+    "issuer": "NYU Tandon School of Engineering (Coursera)",
+    "date": "Sep 2025",
+    "image": "/certificates/introduction-to-cyber-security.jpg",
+    "verifyLink": "https://coursera.org/verify/specialization/F6QJPIF7AMT",
+    "starred": true,
+    "tags": [
+      "Cyber Security",
+      "Threat Detection",
+      "Enterprise Security",
+      "Infrastructure Security"
+    ]
+  },
+  {
+    "title": "Jenkins – From Zero to Hero",
+    "issuer": "LearnKartS (Coursera)",
+    "date": "Aug 2025",
+    "image": "/certificates/jenkins-from-zero-to-hero.jpg",
+    "verifyLink": "https://coursera.org/verify/specialization/OUNM6M99U46F",
+    "tags": [
+      "Jenkins",
+      "CI/CD",
+      "DevOps",
+      "Automation",
+      "Continuous Deployment"
+    ]
+  },
+  {
+    "title": "Cybersecurity Fundamentals",
+    "issuer": "IBM (Coursera)",
+    "date": "Aug 2025",
+    "image": "/certificates/cybersecurity-fundamentals.jpg",
+    "verifyLink": "https://coursera.org/verify/specialization/E4PGTMFOXV5",
+    "starred": true,
+    "tags": [
+      "Cybersecurity",
+      "Encryption",
+      "Network Security",
+      "Security Architecture",
+      "Cyber Careers"
+    ]
+  },
+  {
+    "title": "Cultivating AI and Machine Learning Expertise",
+    "issuer": "KL University",
+    "date": "Aug 2024",
+    "image": "/certificates/cultivating-ai-ml-expertise.jpg",
+    "verifyLink": "",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Professional Development",
+      "AI Fundamentals"
+    ]
+  },
+  {
+    "title": "Data Analytics and Visualization Job Simulation",
+    "issuer": "Accenture (Forage)",
+    "date": "May 2025",
+    "image": "/certificates/accenture-data-analytics-job-simulation.jpg",
+    "verifyLink": "",
+    "tags": [
+      "Data Analytics",
+      "Data Visualization",
+      "Storytelling",
+      "Client Presentation",
+      "Business Insights"
+    ]
+  }
+]

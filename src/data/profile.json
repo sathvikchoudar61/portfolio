@@ -1,0 +1,95 @@
+{
+    "name": "Sathvik",
+    "role": "Full Stack Developer",
+    "subRole": "CS Student",
+    "tagline": "Crafting beautiful, high-performance web experiences.",
+    "location": "India, Earth",
+    "email": "sathvikchoudary61@gmail.com",
+    "stats": {
+        "projects": "15+",
+        "experience": "2.5+",
+        "contributions": "121+"
+    },
+    "socials": [
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/sathvikchoudar61",
+            "icon": "SiGithub"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com/in/sathvik-choudary-a73249286/",
+            "icon": "SiLinkedin"
+        },
+        {
+            "platform": "LeetCode",
+            "url": "https://leetcode.com/u/sathvikchoudary61/",
+            "icon": "SiLeetcode"
+        },
+        {
+            "platform": "CodeChef",
+            "url": "https://www.codechef.com/users/sathvik17",
+            "icon": "SiCodechef"
+        },
+        {
+            "platform": "HackerRank",
+            "url": "https://www.hackerrank.com/profile/sathvikchoudary1",
+            "icon": "SiHackerrank"
+        },
+        {
+            "platform": "Codeforces",
+            "url": "https://codeforces.com/profile/sathvik___17",
+            "icon": "SiCodeforces"
+        },
+        {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/sathvik_______17/",
+            "icon": "SiInstagram"
+        },
+        {
+            "platform": "Telegram",
+            "url": "https://t.me/sathvik_17",
+            "icon": "SiTelegram"
+        }
+    ],
+    "coding_stats": {
+        "leetcode": {
+            "solved": 212,
+            "easy": 143,
+            "medium": 64,
+            "hard": 5,
+            "streak": 37
+        },
+        "codechef": {
+            "rating": 982,
+            "stars": 1,
+            "division": 4,
+            "highest_rating": 1445
+        },
+        "hackerrank": {
+            "stars": 11,
+            "badges": [
+                "C (Gold)",
+                "Java",
+                "Problem Solving"
+            ]
+        },
+        "smartinterviews": {
+            "solved": 184,
+            "bees": 1001,
+            "accuracy": "62.6%",
+            "ranking": "Top 20%"
+        },
+        "codeforces": {
+            "rating": 908,
+            "rank": "Newbie",
+            "max_rating": 908,
+            "max_rank": "Newbie"
+        },
+        "github": {
+            "pull_requests": 3,
+            "issues": 0,
+            "stars_earned": 2
+        }
+    }
+}

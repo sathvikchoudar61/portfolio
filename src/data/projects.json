@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Online Quiz Application",
+    "featured": true,
+    "category": [
+      "Backend",
+      "Java"
+    ],
+    "tech": "Java, MySQL, JDBC",
+    "github": "https://github.com/yourname/quiz-app",
+    "live": "",
+    "description": "A robust backend system for managing quizzes, question banks, and student scores with automatic evaluation."
+  },
+  {
+    "title": "Bucket List App",
+    "featured": true,
+    "category": [
+      "Frontend",
+      "React"
+    ],
+    "tech": "React, Firebase, Tailwind",
+    "github": "https://github.com/yourname/bucket-list",
+    "live": "https://bucket-list-demo.vercel.app",
+    "description": "A personal goal tracking application featuring real-time data sync, authentication, and a beautiful UI."
+  },
+  {
+    "title": "E-Commerce Dashboard",
+    "featured": true,
+    "category": [
+      "Full Stack",
+      "React"
+    ],
+    "tech": "React, Node.js, MongoDB",
+    "github": "https://github.com/yourname/dashboard",
+    "live": "",
+    "description": "Admin panel for managing products, orders, and users with data visualization charts."
+  },
+  {
+    "title": "AI Image Generator",
+    "category": [
+      "AI/ML",
+      "React"
+    ],
+    "tech": "React, OpenAI API",
+    "github": "https://github.com/yourname/ai-gen",
+    "live": "",
+    "description": "Generates unique images from text prompts using DALL-E integration."
+  },
+  {
+    "title": "Portfolio Website",
+    "category": [
+      "Frontend"
+    ],
+    "tech": "React, Framer Motion, Tailwind",
+    "github": "https://github.com/yourname/portfolio",
+    "live": "https://sathvik.dev",
+    "description": "The site you are looking at right now. Highly interactive, performance optimized, and premium design."
+  },
+  {
+    "title": "Weather Tracker",
+    "category": [
+      "Frontend",
+      "API"
+    ],
+    "tech": "JavaScript, OpenWeather API",
+    "github": "https://github.com/yourname/weather",
+    "live": "",
+    "description": "Real-time weather tracking application with location detection and 5-day forecast."
+  }
+]

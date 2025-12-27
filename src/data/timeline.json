@@ -1,0 +1,66 @@
+{
+    "education": [
+        {
+            "id": 1,
+            "type": "University",
+            "title": "B.Tech – Computer Science",
+            "institution": "KL University",
+            "period": "2023 – Present",
+            "year": "2027",
+            "score": "9.62",
+            "scoreLabel": "CGPA",
+            "description": "Specializing in Full Stack Development, Artificial Intelligence, and System Design. Core member of technical clubs.",
+            "tags": [
+                "Full Stack",
+                "AI",
+                "System Design"
+            ],
+            "color": "violet"
+        },
+        {
+            "id": 2,
+            "type": "Intermediate",
+            "title": "Intermediate (MPC)",
+            "institution": "Sri Chaitanya Junior College",
+            "period": "2022 – 2023",
+            "score": "92%",
+            "scoreLabel": "Score",
+            "description": "Completed intermediate education with a focus on Mathematics, Physics, and Chemistry.",
+            "tags": [
+                "Maths",
+                "Physics",
+                "Chemistry"
+            ],
+            "color": "blue"
+        },
+        {
+            "id": 3,
+            "type": "Secondary School",
+            "title": "High School",
+            "institution": "Sri Chaitanya High School",
+            "period": "2022",
+            "score": "10/10",
+            "scoreLabel": "GPA",
+            "description": "Completed secondary education with perfect GPA.",
+            "tags": [
+                "Science",
+                "Maths"
+            ],
+            "color": "emerald"
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "title": "Full Stack Developer Intern",
+            "company": "Tech Corp (Example)",
+            "period": "Jun 2023 - Aug 2023",
+            "description": "Developed and maintained scalable web applications using React and Node.js. Optimized database queries improving response time by 30%.",
+            "tags": [
+                "React",
+                "Node.js",
+                "MongoDB"
+            ]
+        }
+    ]
+}

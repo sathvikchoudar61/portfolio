@@ -1,0 +1,49 @@
+{
+    "categories": [
+        {
+            "name": "Frontend",
+            "items": [
+                "React",
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Framer Motion",
+                "Redux Toolkit",
+                "HTML5/CSS3"
+            ]
+        },
+        {
+            "name": "Backend",
+            "items": [
+                "Node.js",
+                "Express",
+                "Python",
+                "Java",
+                "Supabase",
+                "Firebase",
+                "REST APIs"
+            ]
+        },
+        {
+            "name": "Database",
+            "items": [
+                "PostgreSQL",
+                "MongoDB",
+                "MySQL",
+                "Redis",
+                "Prisma ORM"
+            ]
+        },
+        {
+            "name": "DevOps & Tools",
+            "items": [
+                "Docker",
+                "Git",
+                "AWS (EC2, S3)",
+                "Vercel",
+                "Postman",
+                "Figma"
+            ]
+        }
+    ]
+}
