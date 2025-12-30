@@ -91,5 +91,25 @@
             "issues": 0,
             "stars_earned": 2
         }
-    }
+    },
+    "spotify": {
+        "isPlaying": true,
+        "song": "Starboy",
+        "artist": "The Weeknd",
+        "albumArt": "https://i.scdn.co/image/ab67616d0000b2734718e28d24527d9774635ded"
+    },
+    "documents": [
+        {
+            "name": "resume.pdf",
+            "type": "pdf",
+            "url": "resume.pdf",
+            "size": "2.4 MB"
+        },
+        {
+            "name": "Skills.png",
+            "type": "image",
+            "url": "Skills.png",
+            "size": "16 KB"
+        }
+    ]
 }

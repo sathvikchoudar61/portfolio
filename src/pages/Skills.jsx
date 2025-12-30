@@ -47,7 +47,7 @@ export default function Skills() {
         >
           {skillsData.map((group) => (
             <motion.div
-              key={group.category}
+              key={group.name}
               variants={item}
               className="p-8 rounded-3xl bg-card border border-border/50 hover:border-primary/20 transition-colors backdrop-blur-sm shadow-sm"
             >

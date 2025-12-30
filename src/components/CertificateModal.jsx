@@ -62,7 +62,7 @@ export default function CertificateModal({ cert, onClose }) {
             <h3 className="text-2xl font-semibold">
               {cert.title}
             </h3>
-            <p className="text-brown-light mt-1">
+            <p className="text-zinc-400 mt-1">
               {cert.issuer} · {cert.date}
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function CertificateModal({ cert, onClose }) {
               href={cert.verifyLink}
               target="_blank"
               rel="noreferrer"
-              className="text-brown-light hover:underline text-sm"
+              className="text-indigo-400 hover:underline text-sm"
             >
               View Credential →
             </a>

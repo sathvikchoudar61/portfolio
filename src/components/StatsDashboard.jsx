@@ -102,7 +102,7 @@ export default function StatsDashboard() {
                                 <Star key={i} className="w-5 h-5 text-amber-500 fill-amber-500" />
                             ))}
                         </div>
-                        <div className="text-xs text-zinc-500 mt-2 uppercase tracking-widest">
+                        <div className="text-xs text-zinc-500 dark:text-zinc-400 mt-2 uppercase tracking-widest">
                             Division {codechef.division}
                         </div>
                     </div>
@@ -118,17 +118,17 @@ export default function StatsDashboard() {
                 >
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center justify-between">
-                            <span className="text-sm font-medium text-zinc-400">Total Stars</span>
+                            <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">Total Stars</span>
                             <span className="text-xl font-bold text-emerald-500 flex items-center gap-1">
                                 {hackerrank.stars} <Star className="w-4 h-4 fill-emerald-500" />
                             </span>
                         </div>
-                        <div className="w-full h-px bg-zinc-800" />
+                        <div className="w-full h-px bg-zinc-200 dark:bg-zinc-800" />
                         <div className="grid grid-cols-2 gap-2">
                             {hackerrank.badges.map((badge, i) => (
-                                <div key={i} className="bg-zinc-800/50 rounded p-2 flex flex-col items-center text-center gap-2 border border-zinc-700/50">
+                                <div key={i} className="bg-zinc-100 dark:bg-zinc-800/50 rounded p-2 flex flex-col items-center text-center gap-2 border border-zinc-200 dark:border-zinc-700/50">
                                     <Trophy className="w-6 h-6 text-yellow-500" />
-                                    <span className="text-[10px] uppercase font-bold text-zinc-400">{badge}</span>
+                                    <span className="text-[10px] uppercase font-bold text-zinc-600 dark:text-zinc-400">{badge}</span>
                                 </div>
                             ))}
                         </div>
@@ -155,12 +155,12 @@ export default function StatsDashboard() {
                             </div>
                         </div>
 
-                        <div className="bg-zinc-800/50 rounded-xl p-3 border border-zinc-700/50">
+                        <div className="bg-zinc-100 dark:bg-zinc-800/50 rounded-xl p-3 border border-zinc-200 dark:border-zinc-700/50">
                             <div className="flex justify-between text-sm mb-1">
-                                <span className="text-zinc-400">Accuracy</span>
-                                <span className="text-white font-bold">{smartinterviews.accuracy}</span>
+                                <span className="text-zinc-500 dark:text-zinc-400">Accuracy</span>
+                                <span className="text-zinc-900 dark:text-white font-bold">{smartinterviews.accuracy}</span>
                             </div>
-                            <div className="w-full h-2 bg-zinc-700 rounded-full overflow-hidden">
+                            <div className="w-full h-2 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
                                 <motion.div
                                     initial={{ width: 0 }}
                                     whileInView={{ width: smartinterviews.accuracy }}
@@ -183,18 +183,18 @@ export default function StatsDashboard() {
                         <div className="text-5xl font-bold text-zinc-900 dark:text-white mb-2">
                             {codeforces?.rating || "N/A"}
                         </div>
-                        <div className={`text-sm font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-zinc-800/50 ${codeforces?.rank === "Newbie" ? "text-gray-400" : "text-blue-400"
+                        <div className={`text-sm font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800/50 ${codeforces?.rank === "Newbie" ? "text-gray-500 dark:text-gray-400" : "text-blue-500 dark:text-blue-400"
                             }`}>
                             {codeforces?.rank || "Unrated"}
                         </div>
                         <div className="mt-8 grid grid-cols-2 gap-8 w-full">
                             <div className="text-center">
                                 <div className="text-xs text-zinc-500 uppercase font-bold">Max Rating</div>
-                                <div className="text-lg font-bold text-white">{codeforces?.max_rating || "N/A"}</div>
+                                <div className="text-lg font-bold text-zinc-800 dark:text-white">{codeforces?.max_rating || "N/A"}</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-xs text-zinc-500 uppercase font-bold">Max Rank</div>
-                                <div className="text-lg font-bold text-gray-400">{codeforces?.max_rank || "N/A"}</div>
+                                <div className="text-lg font-bold text-gray-500 dark:text-gray-400">{codeforces?.max_rank || "N/A"}</div>
                             </div>
                         </div>
                     </div>
@@ -217,10 +217,10 @@ export default function StatsDashboard() {
                             href="https://github.com/sathvikchoudar61?tab=repositories"
                             target="_blank"
                             rel="noreferrer"
-                            className="mt-2 p-4 bg-zinc-800/50 rounded-xl border border-zinc-700 flex items-center justify-between group cursor-pointer hover:bg-zinc-800 transition-colors"
+                            className="mt-2 p-4 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 flex items-center justify-between group cursor-pointer hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
                         >
-                            <span className="text-sm font-medium text-zinc-300">View Repositories</span>
-                            <span className="text-lg group-hover:translate-x-1 transition-transform">→</span>
+                            <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">View Repositories</span>
+                            <span className="text-lg group-hover:translate-x-1 transition-transform text-zinc-800 dark:text-zinc-200">→</span>
                         </a>
                     </div>
                 </DashboardCard>
@@ -234,13 +234,13 @@ function DashboardCard({ children, title, icon: Icon, color, borderColor, bgGrad
     return (
         <motion.div
             whileHover={{ y: -5 }}
-            className={`relative overflow-hidden bg-zinc-900/50 backdrop-blur-sm border ${borderColor} rounded-3xl p-6 shadow-xl ${className}`}
+            className={`relative overflow-hidden bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm border ${borderColor} rounded-3xl p-6 shadow-xl ${className}`}
         >
             <div className={`absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br ${bgGradient} to-transparent rounded-full blur-3xl opacity-50 pointer-events-none`} />
 
             <div className="flex items-center gap-3 mb-6">
                 <Icon className={`w-6 h-6 ${color}`} />
-                <h3 className="text-lg font-bold font-heading text-zinc-100">{title}</h3>
+                <h3 className="text-lg font-bold font-heading text-zinc-800 dark:text-zinc-100">{title}</h3>
             </div>
 
             {children}
@@ -253,10 +253,10 @@ function ProgressBar({ label, value, total, color }) {
     return (
         <div className="group">
             <div className="flex justify-between text-xs mb-1">
-                <span className="text-zinc-400 font-medium group-hover:text-zinc-200 transition-colors">{label}</span>
-                <span className="text-zinc-500 group-hover:text-zinc-300 transition-colors">{value}</span>
+                <span className="text-zinc-500 dark:text-zinc-400 font-medium group-hover:text-zinc-700 dark:group-hover:text-zinc-200 transition-colors">{label}</span>
+                <span className="text-zinc-500 dark:text-zinc-500 group-hover:text-zinc-700 dark:group-hover:text-zinc-300 transition-colors">{value}</span>
             </div>
-            <div className="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+            <div className="w-full h-2 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
                 <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${percentage}%` }}
@@ -272,12 +272,12 @@ function StatRow({ icon: Icon, label, value, color }) {
     return (
         <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-                <div className={`p-2 rounded-lg bg-zinc-800 ${color} bg-opacity-20`}>
+                <div className={`p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 ${color} bg-opacity-20`}>
                     <Icon className={`w-4 h-4 ${color}`} />
                 </div>
-                <span className="text-sm text-zinc-400 font-medium">{label}</span>
+                <span className="text-sm text-zinc-600 dark:text-zinc-400 font-medium">{label}</span>
             </div>
-            <span className="text-lg font-bold text-white">{value}</span>
+            <span className="text-lg font-bold text-zinc-800 dark:text-white">{value}</span>
         </div>
     )
 }

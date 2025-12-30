@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github, Code2, Terminal, Globe, Smartphone, Monitor } from "lucide-react";
 
 export default function ProjectCard({ project, onClick, layoutId }) {
+    // Dynamic Icon Selection
+    const getProjectIcon = () => {
+        const cats = project.category.join(" ");
+        if (cats.includes("Frontend") || cats.includes("React")) return <Globe className="w-6 h-6 text-primary" />;
+        if (cats.includes("Backend") || cats.includes("Java") || cats.includes("Node")) return <Terminal className="w-6 h-6 text-primary" />;
+        if (cats.includes("Desktop") || cats.includes("Python")) return <Monitor className="w-6 h-6 text-primary" />;
+        if (cats.includes("Mobile")) return <Smartphone className="w-6 h-6 text-primary" />;
+        return <Code2 className="w-6 h-6 text-primary" />;
+    };
+
     return (
         <motion.div
             layoutId={layoutId}
@@ -13,7 +23,7 @@ export default function ProjectCard({ project, onClick, layoutId }) {
             <div>
                 <div className="flex items-center justify-between mb-4">
                     <div className="p-3 rounded-full bg-secondary group-hover:bg-primary/20 transition-colors">
-                        <span className="text-xl">🚀</span>
+                        {getProjectIcon()}
                     </div>
                     <ArrowUpRight className="text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
@@ -22,7 +32,7 @@ export default function ProjectCard({ project, onClick, layoutId }) {
                     {project.title}
                 </h3>
 
-                <p className="text-muted-foreground text-sm line-clamp-3 leading-relaxed mb-4">
+                <p className="text-muted-foreground text-sm line-clamp-2 leading-relaxed mb-4">
                     {project.description}
                 </p>
             </div>

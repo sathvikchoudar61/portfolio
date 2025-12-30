@@ -190,15 +190,15 @@ export default function HackerTerminal() {
                 setInput(cmd);
                 inputRef.current?.focus();
             }}
-            className="flex items-center justify-between w-full p-2 hover:bg-zinc-800 rounded transition-colors group text-left"
+            className="flex items-center justify-between w-full p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded transition-colors group text-left"
         >
             <div className="flex items-center gap-2">
-                <span className="p-1.5 rounded bg-zinc-800/50 group-hover:bg-zinc-700 text-zinc-400 group-hover:text-green-400 transition-colors">
+                <span className="p-1.5 rounded bg-zinc-200 dark:bg-zinc-800/50 group-hover:bg-zinc-300 dark:group-hover:bg-zinc-700 text-zinc-600 dark:text-zinc-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
                     <Icon className="w-3 h-3" />
                 </span>
-                <span className="font-mono text-sm text-zinc-300 group-hover:text-white font-medium">{cmd}</span>
+                <span className="font-mono text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-black dark:group-hover:text-white font-medium">{cmd}</span>
             </div>
-            <span className="text-xs text-zinc-600 group-hover:text-zinc-500">{desc}</span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-600 group-hover:text-zinc-700 dark:group-hover:text-zinc-500">{desc}</span>
         </button>
     )
 
@@ -304,14 +304,14 @@ export default function HackerTerminal() {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-zinc-900/30 backdrop-blur-sm border border-zinc-800 rounded-xl p-6"
+                        className="bg-white/50 dark:bg-zinc-900/30 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 rounded-xl p-6"
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <div className="p-2 bg-green-500/10 rounded-lg">
-                                <Command className="w-5 h-5 text-green-500" />
+                                <Command className="w-5 h-5 text-green-600 dark:text-green-500" />
                             </div>
                             <div>
-                                <h3 className="text-lg font-bold text-white">System Commands</h3>
+                                <h3 className="text-lg font-bold text-zinc-900 dark:text-white">System Commands</h3>
                                 <p className="text-xs text-zinc-500">Click to execute</p>
                             </div>
                         </div>
@@ -337,10 +337,10 @@ export default function HackerTerminal() {
                         transition={{ delay: 0.2 }}
                         className="bg-gradient-to-br from-green-500/5 to-transparent border border-green-500/10 rounded-xl p-6"
                     >
-                        <h4 className="text-sm font-bold text-green-500 mb-2">Tip:</h4>
-                        <p className="text-xs text-zinc-400 leading-relaxed">
-                            This terminal mimics a Linux shell. You can use <kbd className="bg-zinc-800 px-1 rounded text-zinc-300">Tab</kbd> to autofill known commands (coming soon).
-                            Try contacting the admin via <b>sudo hire</b>.
+                        <h4 className="text-sm font-bold text-green-600 dark:text-green-500 mb-2">Tip:</h4>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            You can click on any command in the list above to execute it immediately.
+                            For a chat, try running <b>sudo hire</b> to open the mail client.
                         </p>
                     </motion.div>
 

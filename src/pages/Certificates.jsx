@@ -93,6 +93,9 @@ export default function Certificates() {
       groups[folder].push(cert);
     });
 
+    // Sort All files to show starred first
+    groups["All"].sort((a, b) => (b.starred ? 1 : 0) - (a.starred ? 1 : 0));
+
     const activeCerts = groups[selectedFolder] || [];
     const filtered = activeCerts.filter(c =>
       c.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -298,8 +301,8 @@ function SidebarItem({ name, count, active, icon: Icon, onClick }) {
     <button
       onClick={onClick}
       className={`flex items-center justify-between w-full px-4 py-3 rounded-xl text-left transition-all group ${active
-          ? "bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-500/20 shadow-sm"
-          : "hover:bg-zinc-100 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white border border-transparent"
+        ? "bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-500/20 shadow-sm"
+        : "hover:bg-zinc-100 dark:hover:bg-white/5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white border border-transparent"
         }`}
     >
       <div className="flex items-center gap-3">

@@ -1,19 +1,167 @@
 [
   {
-    "title": "Online Quiz Application",
+    "title": "Portfolio Website",
     "featured": true,
+    "category": [
+      "Frontend"
+    ],
+    "tech": "React, Framer Motion, Tailwind, Lucide React",
+    "github": "https://github.com/yourname/portfolio",
+    "live": "https://sathvik.dev",
+    "description": "The highly interactive site you're exploring. Built with React and Framer Motion for smooth transitions, featuring a bento-grid layout, dynamic theming, and a dedicated project document viewer.",
+    "readme": "/readme/portfolio.md"
+  },
+  {
+    "title": "EduStealth",
+    "featured": true,
+    "category": [
+      "Full Stack",
+      "MERN",
+      "Security"
+    ],
+    "tech": "React, Node.js, Socket.io, MongoDB, AES Encryption",
+    "github": "",
+    "live": "",
+    "description": "A deceptively simple educational platform that conceals a fully encrypted real-time chat application. Features include a panic mode (double-tap ESC), stealth triggers, and decoy interfaces for maximum privacy.",
+    "readme": "/readme/EduStealth_README.md"
+  },
+  {
+    "title": "Code With Me",
+    "featured": true,
+    "category": [
+      "Full Stack",
+      "MERN"
+    ],
+    "tech": "React, Node.js, MongoDB, Monaco Editor, Nodemailer",
+    "github": "",
+    "live": "",
+    "description": "A real-time collaborative coding environment. Includes a full-featured Monaco code editor, integrated compiler for multiple languages, and a synchronized problem-solving interface for peer programming.",
+    "readme": "/readme/code_with_me_README.md"
+  },
+  {
+    "title": "Auction System",
+    "featured": true,
+    "category": [
+      "Full Stack",
+      "MERN"
+    ],
+    "tech": "React, Node.js, MongoDB, Socket.io, Razorpay",
+    "github": "",
+    "live": "",
+    "description": "A live auction marketplace facilitating real-time bidding via Socket.io. Includes secure user authentication, Razorpay payment processing, and an automated email notification system.",
+    "readme": "/readme/Auction_System_README.md"
+  },
+  {
+    "title": "Text Code Converter",
+    "featured": true,
+    "category": [
+      "Tools",
+      "React"
+    ],
+    "tech": "React, Vite, Tailwind, Base64/Hex/Binary",
+    "github": "",
+    "live": "",
+    "description": "A developer utility for instant bidirectional conversion between text and formats like Morse Code, Binary, Hex, and Base64. Designed with a clean, dark-themed UI and one-click clipboard integration.",
+    "readme": "/readme/text_code_converter_README.md"
+  },
+  {
+    "title": "AI Virtual Painter",
+    "category": [
+      "AI/ML",
+      "Python"
+    ],
+    "tech": "Python, OpenCV, MediaPipe, NumPy",
+    "github": "",
+    "live": "",
+    "description": "A computer vision application that turns your webcam into a touch-free canvas. Uses MediaPipe for hand tracking to let you draw, select colors, and switch tools using intuitive air gestures.",
+    "readme": "/readme/canvas_README.md"
+  },
+  {
+    "title": "Mail Sender",
+    "category": [
+      "Backend",
+      "Tools"
+    ],
+    "tech": "Node.js, Express, Nodemailer, CSV Parser",
+    "github": "",
+    "live": "",
+    "description": "A bulk email automation tool designed for efficiency. Reads recipient lists from CSV files and dispatches customized messages using Nodemailer, featuring robust error handling and API triggers.",
+    "readme": "/readme/mail_sender_README.md"
+  },
+  {
+    "title": "Mail Spam Checker",
+    "category": [
+      "AI/ML",
+      "Python"
+    ],
+    "tech": "Python, Tkinter, Scikit-learn, Naive Bayes, Gmail API",
+    "github": "",
+    "live": "",
+    "description": "A desktop GUI application for intelligent email filtering. Integrates with the Gmail API to fetch real emails and uses a Naive Bayes machine learning model to classify messages as spam or legitimate.",
+    "readme": "/readme/Mail_spam_checker_README.md"
+  },
+  {
+    "title": "Finance Tracker",
+    "category": [
+      "Desktop",
+      "Python"
+    ],
+    "tech": "Python, PyQt5, JSON",
+    "github": "",
+    "live": "",
+    "description": "A Python-based desktop personal finance manager built with PyQt5. Features transaction categorization, real-time balance updates, and local JSON persistence for privacy-focused budgeting.",
+    "readme": "/readme/finace_tracker_README.md"
+  },
+  {
+    "title": "Habit Tracker",
+    "category": [
+      "Web",
+      "Python"
+    ],
+    "tech": "Python (http.server), Vanilla JS, Chart.js",
+    "github": "",
+    "live": "",
+    "description": "A self-hosted web dashboard for tracking daily goals. Features a GitHub-style consistency heatmap, streak analytics, and monthly data visualization charts to keep you motivated.",
+    "readme": "/readme/habit-tracker_README.md"
+  },
+  {
+    "title": "Doc2Pic Tools",
+    "category": [
+      "Tools",
+      "Python"
+    ],
+    "tech": "Python, PDF conversion libraries",
+    "github": "",
+    "live": "",
+    "description": "A collection of efficient automation scripts for document processing. Seamlessly converts PDF pages to high-quality JPGs and transforms Word documents into PDF or image formats.",
+    "readme": "/readme/Doc2Pic_README.md"
+  },
+  {
+    "title": "Steganography App",
+    "category": [
+      "Security",
+      "Java"
+    ],
+    "tech": "Java, Swing, Image Processing",
+    "github": "",
+    "live": "",
+    "description": "A Java-based security tool for hiding secret text messages inside image files. Implements least significant bit (LSB) encoding to ensure the payload remains visually undetectable.",
+    "readme": "/readme/Steganography_App_README.md"
+  },
+  {
+    "title": "Online Quiz Application",
     "category": [
       "Backend",
       "Java"
     ],
-    "tech": "Java, MySQL, JDBC",
-    "github": "https://github.com/yourname/quiz-app",
+    "tech": "Java, MySQL, JDBC, Console Interface",
+    "github": "",
     "live": "",
-    "description": "A robust backend system for managing quizzes, question banks, and student scores with automatic evaluation."
+    "description": "A comprehensive backend system for conducting exams. Manages question banks, automates scoring, and handles student sessions with a robust MySQL database architecture.",
+    "readme": "/readme/safe_quiz_java_application_README.md"
   },
   {
     "title": "Bucket List App",
-    "featured": true,
     "category": [
       "Frontend",
       "React"
@@ -21,50 +169,18 @@
     "tech": "React, Firebase, Tailwind",
     "github": "https://github.com/yourname/bucket-list",
     "live": "https://bucket-list-demo.vercel.app",
-    "description": "A personal goal tracking application featuring real-time data sync, authentication, and a beautiful UI."
+    "description": "A social goal-tracking application. Users can create shared bucket lists, track progress in real-time with Firebase sync, and enjoy a polished Tailwind CSS interface.",
+    "readme": "/readme/bucket_list_README.md"
   },
   {
-    "title": "E-Commerce Dashboard",
-    "featured": true,
+    "title": "Smart Research Assistant",
     "category": [
-      "Full Stack",
-      "React"
+      "AI/ML"
     ],
-    "tech": "React, Node.js, MongoDB",
-    "github": "https://github.com/yourname/dashboard",
+    "tech": "Python, AI",
+    "github": "",
     "live": "",
-    "description": "Admin panel for managing products, orders, and users with data visualization charts."
-  },
-  {
-    "title": "AI Image Generator",
-    "category": [
-      "AI/ML",
-      "React"
-    ],
-    "tech": "React, OpenAI API",
-    "github": "https://github.com/yourname/ai-gen",
-    "live": "",
-    "description": "Generates unique images from text prompts using DALL-E integration."
-  },
-  {
-    "title": "Portfolio Website",
-    "category": [
-      "Frontend"
-    ],
-    "tech": "React, Framer Motion, Tailwind",
-    "github": "https://github.com/yourname/portfolio",
-    "live": "https://sathvik.dev",
-    "description": "The site you are looking at right now. Highly interactive, performance optimized, and premium design."
-  },
-  {
-    "title": "Weather Tracker",
-    "category": [
-      "Frontend",
-      "API"
-    ],
-    "tech": "JavaScript, OpenWeather API",
-    "github": "https://github.com/yourname/weather",
-    "live": "",
-    "description": "Real-time weather tracking application with location detection and 5-day forecast."
+    "description": "An AI-powered tool designed to automate information gathering and synthesis for research projects, helping to streamline the data collection process.",
+    "readme": "/readme/404_NOT_FOUND_Smart_Research_Assistant_README.md"
   }
 ]

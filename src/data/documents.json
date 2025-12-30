@@ -1,0 +1,26 @@
+[
+    {
+        "name": "resume.pdf",
+        "type": "pdf",
+        "url": "items/resume.pdf",
+        "size": "2.4 MB"
+    },
+    {
+        "name": "Certificates.png",
+        "type": "image",
+        "url": "items/Certificates.png",
+        "size": "11 KB"
+    },
+    {
+        "name": "Education.png",
+        "type": "image",
+        "url": "items/Education.png",
+        "size": "14 KB"
+    },
+    {
+        "name": "Skills.png",
+        "type": "image",
+        "url": "items/Skills.png",
+        "size": "16 KB"
+    }
+]

@@ -1,11 +1,19 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { SiGithub } from "react-icons/si";
 
 export default function GithubGraph() {
     const [contributionData, setContributionData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [totalContributions, setTotalContributions] = useState(0);
+    const scrollRef = useRef(null);
+
+    useEffect(() => {
+        // Scroll to end (latest date) on mobile/desktop when data loads
+        if (!loading && scrollRef.current) {
+            scrollRef.current.scrollLeft = scrollRef.current.scrollWidth;
+        }
+    }, [loading]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -108,11 +116,11 @@ export default function GithubGraph() {
                 </div>
             </motion.div>
 
-            <div className="p-6 rounded-3xl bg-white/50 dark:bg-black/20 border border-zinc-200 dark:border-white/5 backdrop-blur-sm overflow-x-auto max-w-full shadow-sm">
-                <div className="grid grid-flow-col gap-1" style={{ gridTemplateRows: "repeat(7, minmax(0, 1fr))" }}>
+            <div ref={scrollRef} className="p-3 md:p-6 rounded-3xl bg-white/50 dark:bg-black/20 border border-zinc-200 dark:border-white/5 backdrop-blur-sm overflow-x-auto max-w-full shadow-sm scrollbar-hide">
+                <div className="grid grid-flow-col gap-1 md:gap-1" style={{ gridTemplateRows: "repeat(7, minmax(0, 1fr))" }}>
                     {loading
                         ? Array.from({ length: 364 }).map((_, i) => (
-                            <div key={i} className="w-3 h-3 md:w-4 md:h-4 rounded-sm bg-zinc-200 dark:bg-zinc-800/30 animate-pulse" />
+                            <div key={i} className="w-2.5 h-2.5 md:w-4 md:h-4 rounded-sm bg-zinc-200 dark:bg-zinc-800/30 animate-pulse" />
                         ))
                         : contributionData.map((day, i) => (
                             <motion.div
@@ -120,7 +128,7 @@ export default function GithubGraph() {
                                 initial={{ scale: 0 }}
                                 whileInView={{ scale: 1 }}
                                 transition={{ delay: i * 0.0005 }} // faster stagger for large list
-                                className={`w-3 h-3 md:w-4 md:h-4 rounded-sm ${getColor(day.level)}`}
+                                className={`w-2.5 h-2.5 md:w-4 md:h-4 rounded-sm ${getColor(day.level)}`}
                                 title={`${day.date}: ${day.count} contributions`}
                             />
                         ))

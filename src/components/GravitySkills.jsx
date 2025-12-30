@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from "react";
 
 const skills = [
     { name: "React", level: 3 }, { name: "Next.js", level: 3 }, { name: "Node.js", level: 3 },
-    { name: "TypeScript", level: 2 }, { name: "Tailwind", level: 2 }, { name: "Framer", level: 2 },
-    { name: "Git", level: 1 }, { name: "AWS", level: 2 }, { name: "Docker", level: 2 },
-    { name: "PostgreSQL", level: 3 }, { name: "MongoDB", level: 2 }, { name: "Python", level: 2 },
-    { name: "Java", level: 2 }, { name: "Figma", level: 1 }, { name: "Redux", level: 2 },
-    { name: "GraphQL", level: 2 }, { name: "Linux", level: 2 }, { name: "Three.js", level: 2 }
+    { name: "JavaScript", level: 2 }, { name: "MongoDB", level: 3 }, { name: "System Design", level: 3 },
+    { name: "AWS", level: 2 }, { name: "Docker", level: 2 }, { name: "PostgreSQL", level: 3 },
+    { name: "Python", level: 2 }, { name: "Java", level: 2 }, { name: "Redis", level: 2 },
+    { name: "OpenCV", level: 2 }, { name: "Kafka", level: 2 }, { name: "Linux", level: 2 },
+    { name: "Git", level: 2 }, { name: "Kubernetes", level: 2 }, { name: "Postman", level: 2 }
 ];
 
 export default function GravitySkills({ gravityStrength = 0.4 }) {

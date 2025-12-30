@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight, Mail } from "lucide-react";
+import { ArrowDown, ArrowRight, Mail, Eye, Download } from "lucide-react";
 import { SiGithub, SiLinkedin, SiLeetcode, SiCodechef, SiHackerrank, SiCodeforces, SiInstagram, SiTelegram } from "react-icons/si";
 import profile from "../data/profile.json";
 
@@ -66,7 +66,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.25 }}
-                className="grid grid-cols-3 gap-8 md:gap-12 mb-12 border-y border-zinc-200 dark:border-white/5 py-4 px-6 bg-white/30 dark:bg-black/20 backdrop-blur-sm rounded-2xl"
+                className="grid grid-cols-3 gap-2 md:gap-12 mb-12 border-y border-zinc-200 dark:border-white/5 py-4 px-2 md:px-6 bg-white/30 dark:bg-black/20 backdrop-blur-sm rounded-2xl w-full max-w-2xl"
             >
                 <div>
                     <div className="text-2xl md:text-3xl font-bold font-heading text-zinc-900 dark:text-white">{profile.stats.projects}</div>
@@ -96,20 +96,38 @@ export default function Hero() {
                 <div className="flex items-center gap-4">
                     <a
                         href="/projects"
-                        className="group relative inline-flex items-center gap-2 px-8 py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full font-semibold tracking-wide transition-all hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20"
+                        className="group relative inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full font-semibold tracking-wide transition-all hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 text-sm md:text-base whitespace-nowrap"
                     >
                         View My Work
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>
-                    <a
-                        href="/resume.pdf"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="group relative inline-flex items-center gap-2 px-8 py-4 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-700 rounded-full font-semibold tracking-wide transition-all hover:scale-105 hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:shadow-lg"
-                    >
-                        Resume
-                        <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                    </a>
+                    {/* COMPOSITE RESUME BUTTON */}
+                    <div className="group relative inline-flex items-center gap-3 px-5 md:px-6 py-3 md:py-4 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-700 rounded-full transition-all hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:shadow-lg">
+                        <span className="font-semibold tracking-wide">Resume</span>
+
+                        {/* Divider */}
+                        <div className="w-px h-5 bg-zinc-300 dark:bg-zinc-600" />
+
+                        <div className="flex items-center gap-3">
+                            <a
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-zinc-500 hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400 transition-colors"
+                                title="View Resume"
+                            >
+                                <Eye className="w-5 h-5 hover:scale-110 transition-transform" />
+                            </a>
+                            <a
+                                href="/resume.pdf"
+                                download="Resume_Sathvik.pdf"
+                                className="text-zinc-500 hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400 transition-colors"
+                                title="Download Resume"
+                            >
+                                <Download className="w-5 h-5 hover:scale-110 transition-transform" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="flex items-center gap-3 px-4 py-2 rounded-full bg-white/50 dark:bg-black/20 border border-black/5 dark:border-white/5 backdrop-blur-sm">
